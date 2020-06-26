@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Animated Logo: Fila</title>
+    <script src="plugins/TweenMax.js"></script>
+    <script src="plugins/DrawSVGPlugin.js"></script>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <svg id="logo"xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="700" height="350" viewBox="0 0 500 250">
+        <defs>
+            <clipPath id="clip-path">
+                <path id="f-clip"
+                    d="M94.86,145.08a4.63,4.63,0,0,0-4.63,4.64v23.82a17,17,0,0,1-17,17H71a17,17,0,0,1-17-17V130.22a20,20,0,0,1,20.28-20.28H143.5a17,17,0,0,1,17,17v1.07a17,17,0,0,1-17,17ZM71.23,63.9h80.62a17,17,0,0,1,17.23,16.91v1.07a17.23,17.23,0,0,1-17.23,17.24H71.23A17.22,17.22,0,0,1,54,81.88V80.7c0-9.52,7.71-16.8,17.22-16.8"
+                    style="fill:none" />
+            </clipPath>
+            <clipPath id="clip-path-2">
+                <path id="i-clip"
+                    d="M180.15,173.31l-.38-94.65a17,17,0,0,1,16.91-17.21h1.86a17.21,17.21,0,0,1,17.22,17.21l.38,94.65a17.22,17.22,0,0,1-17.23,17.23H197c-9.53,0-16.81-7.72-16.81-17.23"
+                    style="fill:none" />
+            </clipPath>
+            <clipPath id="clip-path-3">
+                <path id="la-clip"
+                d="M397.55,72.63l38.26,62.29c8.27,13.45,10.19,17,10.19,26.87,0,15.64-14.18,27.6-26.76,27.6H367.58c-9.44,0-17.05-6.52-17.05-15.93v-1.08a17,17,0,0,1,17.05-17h31.67c2,0,3.24-.26,3.76-1.52s.43-2.14-.52-3.68l-22.55-36.2c-.38-.6-.8-1.43-1.51-1.43s-1.22.83-1.52,1.47l-34.5,59.16c-5.34,9.39-11.67,16.25-21.09,16.25H255c-12.55,0-25.19-12.37-25.19-25.19V78.61a17,17,0,0,1,17-17H249a17.06,17.06,0,0,1,17,17l0,69.92a4.49,4.49,0,0,0,4.66,4.62h33c5.76,0,9.24-2.07,12.27-7.1l44.29-73.42a21.46,21.46,0,0,1,19-10.72c7.73,0,13.85,3.5,18.34,10.72"
+                style="fill:none" />
+            </clipPath>
+        </defs>
+        <g id="logo-group">
+            <g id="f">
+                <g style="clip-path:url(#clip-path)">
+                    <line id="f-path1" x1="31" y1="81.5" x2="195" y2="81.5"
+                        style="fill:none;stroke:#e51937;stroke-linecap:round;stroke-miterlimit:10;stroke-width:36px" />
+                    <polyline id="f-path2" points="71 212 71 128 191 128"
+                        style="fill:none;stroke:#03234c;stroke-linecap:round;stroke-miterlimit:10;stroke-width:36px" />
+                </g>
+            </g>
+            <g id="i">
+                <g style="clip-path:url(#clip-path-2)">
+                    <line id="i-path" x1="198" y1="211" x2="198" y2="41"
+                        style="fill:none;stroke:#03234c;stroke-linecap:round;stroke-miterlimit:10;stroke-width:36px" />
+                </g>
+            </g>
+            <g id="la">
+                <g style="clip-path:url(#clip-path-3)">
+                    <path id="la-path"
+                        d="M248,41V172l74-1,47.79-81.23C376,78,385,81,389.06,89.88l36.47,64.22a10.82,10.82,0,0,1-8.95,16.9H324"
+                        style="fill:none;stroke:#03234c;stroke-linecap:round;stroke-miterlimit:10;stroke-width:36px" />
+                </g>
+            </g>
+        </g>
+    </svg>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
