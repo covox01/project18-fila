@@ -29,16 +29,12 @@ function start(){
     tl4.timeScale(1.5)
     la.timeScale(1.5)
 
-    TweenMax.delayedCall(3, exit)
+    TweenMax.delayedCall(2.5, exit)
 }
 
-// function exit(){
-//     TweenMax.to("#f-path1", .3, {drawSVG: "100% 100%"})
-//     TweenMax.to("#f-path2, #i-path, #la-path", .3, {opacity: 0})
-// }
 
 function exit(){
-    var ease = Power1.easeOut
+    var ease = Power3.easeInOut
     var la = new TimelineMax()
     var tl = new TimelineMax()
     var tl2 = new TimelineMax()
@@ -46,29 +42,28 @@ function exit(){
     var tl4 = new TimelineMax()
 
     tl
-        .to("#f-path2", 4, {opacity: .9, drawSVG: "100% 100%", ease: ease})
+        .to("#f-path2", 4, {opacity: .9, drawSVG: "75% 100%", ease: ease})
         TweenMax.to("#f-path2", 2, {strokeWidth: 36, delay: 1})
 
     tl4 
-        .to("#f-path1", 3, {opacity: .9, drawSVG: "100% 100%", ease: ease, delay: .8})
-        // .to("#f-path2", 1.8, {opacity: 1, drawSVG: "0% 100%", ease: ease, delay: 2.6}, "sync+=.2")
+        .to("#f-path1", 3, {opacity: .9, drawSVG: "75% 100%", ease: ease, delay: .8})
 
     tl2
-        .to("#i-path", 3, {opacity: .9, drawSVG: "100% 100%", ease: ease, delay: .8})
+        .to("#i-path", 3, {opacity: .9, drawSVG: "79% 100%", ease: ease, delay: .8})
 
     tl3
-        .to("#la-path", 3, {opacity: .95, drawSVG: "0% 0%", ease: ease, delay: .4})
+        .to("#la-path", 3, {opacity: .95, drawSVG: "0% 8%", ease: ease, delay: .4})
 
-        TweenMax.to("#la-path", 1, {strokeWidth: 36, delay: .4})
-        TweenMax.to("#la-path, #f-path1, #f-path2, #i-path", 1, {opacity: 0, delay: 1.6, onComplete: clearProps})
+        TweenMax.to("#la-path", 1, {strokeWidth: 36, delay: 1.2})
+        TweenMax.to("#la-path, #f-path1, #f-path2, #i-path", 1, {opacity: 0, delay: 2.2, onComplete: clearProps})
 
   
 
-    tl.timeScale(2)
-    tl2.timeScale(2)
-    tl3.timeScale(2)
-    tl4.timeScale(2)
-    la.timeScale(2)
+    tl.timeScale(1)
+    tl2.timeScale(1)
+    tl3.timeScale(1)
+    tl4.timeScale(1)
+    la.timeScale(1)
 }
 
 function clearProps(){
