@@ -46,16 +46,17 @@ function exit(){
         TweenMax.to("#f-path2", 2, {strokeWidth: 36, delay: 1})
 
     tl4 
-        .to("#f-path1", 3, {opacity: .9, drawSVG: "75% 100%", ease: ease, delay: .8})
+        .to("#f-path1", 3, {opacity: .9, drawSVG: "73% 100%", ease: ease, delay: .8})
 
     tl2
-        .to("#i-path", 3, {opacity: .9, drawSVG: "79% 100%", ease: ease, delay: .8})
+        .to("#i-path", 3, {opacity: .9, drawSVG: "76% 100%", ease: ease, delay: .8})
 
     tl3
-        .to("#la-path", 3, {opacity: .95, drawSVG: "0% 8%", ease: ease, delay: .4})
+        .to("#la-path", 3, {opacity: .95, drawSVG: "0% 7.5%", ease: ease, delay: .4})
 
         TweenMax.to("#la-path", 1, {strokeWidth: 36, delay: 1.2})
-        TweenMax.to("#la-path, #f-path1, #f-path2, #i-path", 1, {opacity: 0, delay: 2.2, onComplete: clearProps})
+        TweenMax.to("#la-path, #f-path1, #f-path2, #i-path", .8, {opacity: 0, delay: 2.5})
+        TweenMax.delayedCall(3.5, clearProps)
 
   
 
